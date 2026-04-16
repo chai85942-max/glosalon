@@ -165,6 +165,31 @@ footer {
       <h3>Makeup</h3>
       <p>Bridal & party makeup</p>
     </div>
+<section class="section">
+  <h2>What Our Customers Say</h2>
+
+  <div class="testimonials">
+
+    <div class="review">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Amazing service for 2 years. Staff understands skin types perfectly."</p>
+      <strong>- Shilpa H</strong>
+    </div>
+
+    <div class="review">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Best place for kids haircut and grooming. Very reliable."</p>
+      <strong>- Anuja Reddy</strong>
+    </div>
+
+    <div class="review">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Professional staff. Special thanks for great suggestions."</p>
+      <strong>- Siwani Jaiswal</strong>
+    </div>
+
+  </div>
+</section>
 
   </div>
 </section>
@@ -240,6 +265,27 @@ Sharmila is one of the beautician is friendly and her service is really good.. s
 <footer>
   © 2026 Glo Unisex Salon Yelahanka
 </footer>
+<script>
+// Smooth scroll for nav
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Scroll animation
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.card').forEach(card => {
+    const pos = card.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 50) {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
 
 </body>
 </html>

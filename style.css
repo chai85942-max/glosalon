@@ -1,0 +1,118 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c8a97e;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.65);
+  padding: 50px;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero h2 {
+  font-size: 46px;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(45deg, #c8a97e, #a67c52);
+  border: none;
+  padding: 12px 28px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* SERVICES */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 260px;
+  margin: 15px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review {
+  width: 300px;
+  background: white;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
